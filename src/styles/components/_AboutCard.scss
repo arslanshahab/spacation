@@ -1,0 +1,13 @@
+.about-card-wrapper{
+    background-color: $cod-gray;
+    h1{
+        font-size: 60px;
+        font-family: 'Lora', serif;
+        color: $primary-color;
+    }
+    p{
+        font-size: 20px;
+        font-weight: 300 !important;
+        color: #ffffff;
+    }
+}

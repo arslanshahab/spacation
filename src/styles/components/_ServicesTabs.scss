@@ -1,0 +1,56 @@
+.service-tabs-wrapper {
+    background-color: #e2e2e220;
+    #simple-tabpanel-0 {
+        background-color: #e2e2e220;
+    }
+    h1 {
+        font-family: "Lora", serif;
+        font-style: italic;
+        color: $secondary-color;
+        margin-bottom: 2rem;
+    }
+    .tab-slider {
+        overflow: hidden;
+        padding: 1rem;
+        .carousel {
+            .slide {
+                //set height here
+            }
+        }
+        .slider-image-wrapper-service {
+            position: relative;
+            .hotel-title {
+                position: absolute;
+                top: 10%;
+                color: $white;
+                font-size: 3rem;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+    .tab-content {
+        position: relative;
+        h1 {
+            color: $nile-blue;
+            font-style: normal;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            color: $nile-blue;
+            li {
+                display: block;
+            }
+            li:before {
+                content: "• ";
+            }
+        }
+        button {
+            border: none;
+            background-color: $primary-color;
+            padding: 0.5rem 2rem;
+            bottom: 0;
+        }
+    }
+}
