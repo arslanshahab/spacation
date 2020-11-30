@@ -14,7 +14,7 @@
         color: $nile-blue;
         margin-bottom: 2rem;
         font-size: 14px;
-        color:gray;
+        color: gray;
     }
     .room-carousel {
         margin-top: 2rem;
@@ -55,12 +55,11 @@
                         color: $nile-blue;
                         font-weight: bolder;
                     }
-                    .slide-content h5{
+                    .slide-content h5 {
                         font-size: 15px;
                         color: gray;
-                    
                     }
-                    button{
+                    button {
                         border: none;
                         padding: 0.5rem 1.5rem;
                         background-color: $primary-color;
@@ -106,6 +105,8 @@
                             font-size: smaller;
                             li {
                                 display: inline-block;
+                                font-size: 14px;
+                                line-height: 15px;
                             }
                         }
                         .rate {

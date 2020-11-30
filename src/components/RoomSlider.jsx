@@ -47,11 +47,11 @@ const rooms = [
             area: 55,
         },
         additional_details_list: [
-            "King bed &amp; Lounge area.",
-            "King bed &amp; Lounge area.",
-            "Bathroom with bath, shower &amp; toiletries.",
-            "King bed &amp; Lounge area.",
-            "Air conditioning &amp; Free WiFi.",
+            "King bed & Lounge area.",
+            "King bed & Lounge area.",
+            "Bathroom with bath, shower & toiletries.",
+            "King bed & Lounge area.",
+            "Air conditioning & Free WiFi.",
         ],
         rate: 500.27,
         original: 347.02,
@@ -67,11 +67,11 @@ const rooms = [
             area: 55,
         },
         additional_details_list: [
-            "King bed &amp; Lounge area.",
-            "King bed &amp; Lounge area.",
-            "Bathroom with bath, shower &amp; toiletries.",
-            "King bed &amp; Lounge area.",
-            "Air conditioning &amp; Free WiFi.",
+            "King bed & Lounge area.",
+            "King bed & Lounge area.",
+            "Bathroom with bath, shower & toiletries.",
+            "King bed & Lounge area.",
+            "Air conditioning & Free WiFi.",
         ],
         rate: 1305.37,
         original: 1500.78,
@@ -87,10 +87,10 @@ const rooms = [
             area: 55,
         },
         additional_details_list: [
-            "King bed &amp; Lounge area.",
-            "King bed &amp; Lounge area.",
-            "Bathroom with bath, shower &amp; toiletries.",
-            "King bed &amp; Lounge area.",
+            "King bed & Lounge area.",
+            "King bed & Lounge area.",
+            "Bathroom with bath, shower & toiletries.",
+            "King bed & Lounge area.",
             "Air conditioning &amp; Free WiFi.",
         ],
         rate: 439.06,
@@ -114,7 +114,7 @@ const RoomSlider = () => {
                 infiniteLoop={true}
                 autoPlay={false}
                 centerMode
-                centerSlidePercentage={50}
+                centerSlidePercentage={60}
                 className="room-carousel"
             >
                 {

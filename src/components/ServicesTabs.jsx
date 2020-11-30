@@ -50,16 +50,24 @@ TabPanel.propTypes = {
     value: PropTypes.any.isRequired,
 };
 
+// function a11yProps(index) {
+//     return {
+//         id: `simple-tab-${index}`,
+//         'aria-controls': `simple-tabpanel-${index}`,
+//     };
+// }
 function a11yProps(index) {
     return {
-        id: `simple-tab-${index}`,
-        'aria-controls': `simple-tabpanel-${index}`,
+      id: `scrollable-auto-tab-${index}`,
+      'aria-controls': `scrollable-auto-tabpanel-${index}`,
     };
-}
+  }
+  
 
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
+        width: '100%',
         backgroundColor: theme.palette.background.paper,
     },
 }));
@@ -75,7 +83,14 @@ const ServiceTabs = (props) => {
     return (
         <div className={classes.root}>
             <Paper square>
-                <Tabs scrollButtons="auto" value={value} variant="fullWidth" centered onChange={handleChange} aria-label="simple tabs example">
+                <Tabs 
+                    value={value} 
+                    variant="scrollable" 
+                    scrollButtons="on" 
+                    centered 
+                    onChange={handleChange} 
+                    aria-label="scrollable auto tabs example"
+                >
                     <Tab label="Dining" {...a11yProps(0)} />
                     <Tab label="Spa &amp; Wellness" {...a11yProps(1)} />
                     <Tab label="White Sand &amp; Beach" {...a11yProps(2)} />
@@ -98,7 +113,7 @@ const ServiceTabs = (props) => {
                                     sliderImages.map(x => (
                                         <div className="slider-image-wrapper-service">
                                             <img src={x.image} />
-                                            {/* <p className="hotel-title">{x.title}</p> */}
+                                            <p className="hotel-title">{x.title}</p>
                                         </div>
                                     ))
                                 }

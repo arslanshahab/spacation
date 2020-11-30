@@ -1,5 +1,14 @@
 .service-tabs-wrapper {
     background-color: #e2e2e220;
+    .MuiTabs-flexContainer {
+        justify-content: space-between;
+    }
+    .PrivateTabIndicator-colorSecondary-4 {
+        background-color: #8d6f30;
+    }
+    button:focus {
+        outline: none !important;
+    }
     #simple-tabpanel-0 {
         background-color: #e2e2e220;
     }
@@ -21,11 +30,12 @@
             position: relative;
             .hotel-title {
                 position: absolute;
-                top: 10%;
+                bottom: 5%;
                 color: $white;
-                font-size: 3rem;
+                font-size: 2rem;
                 text-align: center;
                 width: 100%;
+                background: rgba(0, 0, 0, 0.3);
             }
         }
     }
@@ -41,7 +51,7 @@
             color: $nile-blue;
             li {
                 font-size: 14px;
-                color:gray;
+                color: gray;
                 display: block;
             }
             li:before {
@@ -71,8 +81,13 @@
             .slider-image-wrapper-service {
                 position: relative;
                 .hotel-title {
-                    top: 10%;
-                    font-size: 3rem;
+                    position: absolute;
+                    bottom: 7%;
+                    color: $white;
+                    font-size: 1rem;
+                    text-align: center;
+                    width: 100%;
+                    background: rgba(0, 0, 0, 0.3);
                 }
             }
         }
@@ -87,5 +102,4 @@
             }
         }
     }
-    
 }

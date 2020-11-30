@@ -3,8 +3,8 @@ import React from 'react';
 const CopyrightFooter = () => {
     return ( 
         <div className="copyright-footer p-4 text-center">
-            <h6>&copy; Copyright H Dubai--, Powered By Prism Digital</h6>
-        </div>
+        <p>&copy; Copyright H Dubai 2020, Powered By <a href="https://prismdigital.ae">Prism Digital</a></p>
+    </div>
      );
 }
  
