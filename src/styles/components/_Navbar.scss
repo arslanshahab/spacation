@@ -20,3 +20,15 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        img {
+            width: 30px;
+        }
+        ul {
+            display: none;
+        }
+    }
+    
+}

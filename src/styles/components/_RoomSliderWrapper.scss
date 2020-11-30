@@ -1,22 +1,22 @@
 .room-slider-wrapper {
-    .section-title{
+    .section-title {
         text-align: center;
         color: $secondary-color;
         padding: 1rem;
-        font-family: 'Lora', serif;
+        font-family: "Lora", serif;
         font-weight: 500;
         width: 60%;
         margin: auto;
         font-size: 60px;
     }
-    p{
+    p {
         text-align: center;
         color: $nile-blue;
         margin-bottom: 2rem;
     }
     .room-carousel {
         margin-top: 2rem;
-        .slider-wrapper{
+        .slider-wrapper {
             overflow: visible;
         }
         .slide {
@@ -32,7 +32,8 @@
                 margin: 0 2rem;
                 .slide-content {
                     visibility: visible;
-                    h1,h2{
+                    h1,
+                    h2 {
                         color: $primary-color;
                     }
                     ul {
@@ -46,17 +47,64 @@
                             content: "• ";
                         }
                     }
-                    .rate{
+                    .rate {
                         color: $nile-blue;
                         font-weight: bolder;
                     }
-                    button{
+                    button {
                         border: none;
                         padding: 0.5rem 1.5rem;
                         background-color: $primary-color;
                         color: $white;
                         font-weight: 600;
                         font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .room-slider-wrapper {
+        .section-title {
+            width: 100%;
+            font-size: 2rem;
+        }
+        p {
+            font-size: smaller;
+        }
+        .room-carousel {
+            .slider-wrapper {
+                height: 75vh;
+            }
+            ul {
+                li {
+                    .slide-content {
+                        visibility: hidden;
+                    }
+                }
+                .selected {
+                    margin: 0 1rem;
+                    .slide-content {
+                        visibility: visible;
+                        h1,
+                        h2,
+                        h3 {
+                            font-size: 1.5rem;
+                        }
+                        ul {
+                            font-size: smaller;
+                            li {
+                                display: inline-block;
+                            }
+                        }
+                        .rate {
+                            font-size: 1rem;
+                        }
+                        .rate-deleted {
+                            font-size: 0.9rem;
+                        }
                     }
                 }
             }

@@ -128,12 +128,12 @@ const RoomSlider = () => {
                                         <li>{li}</li>
                                     ))}
                                 </ul>
-                                <h3 className="rate my-3">
+                                <p className="rate my-3">
                                     AED {x.rate}
-                                </h3>
-                                <h5 className="rate my-3">
-                                    <del style={{opacity: 0.8}}>AED {x.original}</del>
-                                </h5>
+                                </p>
+                                <p className="rate-deleted my-3">
+                                    <del style={{opacity: 0.9}}>AED {x.original}</del>
+                                </p>
                                 <button className="btn-book-now my-2" onClick={()=> window.location = "https://be.synxis.com/?_ga=2.102065793.1000121752.1606552834-1702853238.1606552834&adult=1&arrive=2020-11-28&chain=27304&child=0&currency=AED&depart=2020-11-29&hotel=75043&level=hotel&locale=en-US&promo=HSPA&rooms=1"}>BOOK NOW</button>
                             </div>
                         </div>

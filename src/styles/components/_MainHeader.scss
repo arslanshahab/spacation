@@ -27,3 +27,15 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .header-wrapper {
+        height: 60vh;
+        .title {
+            padding: 1rem;
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+}

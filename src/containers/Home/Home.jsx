@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import MainHeader from 'components/MainHeader';
-import SearchForm from 'components/SearchForm';
-import ServiceCard from 'components/ServiceCard';
-import { Container, Grid } from '@material-ui/core';
 import DescriptionCard from 'components/DescriptionCard';
 import HotelInfoCard from 'components/HotelInfoCard';
 import AboutCard from 'components/AboutCard';
@@ -11,6 +8,7 @@ import CopyrightFooter from 'components/CopyrightFooter';
 import ServiceTabs from 'components/ServicesTabs';
 import RoomSlider from 'components/RoomSlider';
 import GuestReviews from 'components/GuestReviews';
+import BottomNavigator from 'components/BottomNavigator';
 
 const room1 = require('assets/images/room1.png');
 const room2 = require('assets/images/room2.png');
@@ -86,6 +84,7 @@ class Home extends Component {
                 <GuestReviews />
                 <AboutCard />
                 <CopyrightFooter />
+                <BottomNavigator />
             </React.Fragment>
         );
     }

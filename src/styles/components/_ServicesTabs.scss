@@ -54,3 +54,36 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .service-tabs-wrapper {
+        #simple-tabpanel-0 {
+            background-color: #e2e2e220;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        .tab-slider {
+            overflow: hidden;
+            padding: 0;
+            .slider-image-wrapper-service {
+                position: relative;
+                .hotel-title {
+                    top: 10%;
+                    font-size: 3rem;
+                }
+            }
+        }
+        .tab-content {
+            padding: 0 !important;
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            ul {
+                font-size: smaller;
+            }
+        }
+    }
+    
+}

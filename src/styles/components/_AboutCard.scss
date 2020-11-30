@@ -11,3 +11,17 @@
         color: #ffffff;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .about-card-wrapper{
+        padding: 1rem !important;
+        h1{
+            font-size: 2rem;
+        }
+        p{
+            font-size: smaller;
+            font-weight: 400 !important;
+            text-align: justify !important;
+        }
+    }   
+}
