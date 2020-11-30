@@ -7,7 +7,7 @@ const DescriptionCard = (props) => {
         <React.Fragment>
             <div className="description-card-wrapper p-5">
                 <div className="container">
-                    <h1 className="text-center p-4">{constants.DESCRIPTION_CARD.TITLE}</h1>
+                    <h2 className="text-center p-4">{constants.DESCRIPTION_CARD.TITLE}</h2>
                     <p className="text-center mt-4">
                         {constants.DESCRIPTION_CARD.DESCRIPTION} <br/>
                         {constants.DESCRIPTION_CARD.INCLUDE}

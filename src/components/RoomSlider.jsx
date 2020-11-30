@@ -103,7 +103,7 @@ const rooms = [
 const RoomSlider = () => {
     return (
         <div className="room-slider-wrapper py-4">
-            <h1 className="section-title">Relax, Rejuvenate with our Spa-cation Packages</h1>
+            <h2 className="section-title">Relax, Rejuvenate with our Spa-cation Packages</h2>
             <p className="w-75 text-center mx-auto">Turn your staycation into a blissful escape with a Suite Stay and 120 minutes of relaxing spa time starting from AED 850. Rejuvenate at the award-winning Mandara Spa and choose from our range of body treatments.</p>
             <Carousel
                 dynamicHeight={false}
@@ -122,7 +122,7 @@ const RoomSlider = () => {
                         <div>
                             <img src={x.image} />
                             <div className="slide-content py-3">
-                                <h1>{x.title}</h1>
+                                <h2>{x.title}</h2>
                                 <ul>
                                     {x.additional_details_list.map(li => (
                                         <li>{li}</li>

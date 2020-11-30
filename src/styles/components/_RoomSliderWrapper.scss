@@ -7,12 +7,14 @@
         font-weight: 500;
         width: 60%;
         margin: auto;
-        font-size: 60px;
+        font-size: 40px;
     }
     p {
         text-align: center;
         color: $nile-blue;
         margin-bottom: 2rem;
+        font-size: 14px;
+        color:gray;
     }
     .room-carousel {
         margin-top: 2rem;
@@ -42,6 +44,8 @@
                         color: $primary-color;
                         li {
                             display: block;
+                            font-size: 14px;
+                            line-height: 30px;
                         }
                         li:before {
                             content: "• ";
@@ -51,7 +55,12 @@
                         color: $nile-blue;
                         font-weight: bolder;
                     }
-                    button {
+                    .slide-content h5{
+                        font-size: 15px;
+                        color: gray;
+                    
+                    }
+                    button{
                         border: none;
                         padding: 0.5rem 1.5rem;
                         background-color: $primary-color;
