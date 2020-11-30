@@ -47,11 +47,11 @@ const rooms = [
             area: 55,
         },
         additional_details_list: [
-            "King bed &amp; Lounge area.",
-            "King bed &amp; Lounge area.",
-            "Bathroom with bath, shower &amp; toiletries.",
-            "King bed &amp; Lounge area.",
-            "Air conditioning &amp; Free WiFi.",
+            "King bed & Lounge area.",
+            "King bed & Lounge area.",
+            "Bathroom with bath, shower & toiletries.",
+            "King bed & Lounge area.",
+            "Air conditioning & Free WiFi.",
         ],
         rate: 500.27,
         original: 347.02,
@@ -67,11 +67,11 @@ const rooms = [
             area: 55,
         },
         additional_details_list: [
-            "King bed &amp; Lounge area.",
-            "King bed &amp; Lounge area.",
-            "Bathroom with bath, shower &amp; toiletries.",
-            "King bed &amp; Lounge area.",
-            "Air conditioning &amp; Free WiFi.",
+            "King bed & Lounge area.",
+            "King bed & Lounge area.",
+            "Bathroom with bath, shower & toiletries.",
+            "King bed & Lounge area.",
+            "Air conditioning & Free WiFi.",
         ],
         rate: 1305.37,
         original: 1500.78,
@@ -87,10 +87,10 @@ const rooms = [
             area: 55,
         },
         additional_details_list: [
-            "King bed &amp; Lounge area.",
-            "King bed &amp; Lounge area.",
-            "Bathroom with bath, shower &amp; toiletries.",
-            "King bed &amp; Lounge area.",
+            "King bed & Lounge area.",
+            "King bed & Lounge area.",
+            "Bathroom with bath, shower & toiletries.",
+            "King bed & Lounge area.",
             "Air conditioning &amp; Free WiFi.",
         ],
         rate: 439.06,
@@ -114,7 +114,7 @@ const RoomSlider = () => {
                 infiniteLoop={true}
                 autoPlay={false}
                 centerMode
-                centerSlidePercentage={50}
+                centerSlidePercentage={60}
                 className="room-carousel"
             >
                 {
@@ -128,12 +128,12 @@ const RoomSlider = () => {
                                         <li>{li}</li>
                                     ))}
                                 </ul>
-                                <h3 className="rate my-3">
+                                <p className="rate my-3">
                                     AED {x.rate}
-                                </h3>
-                                <h5 className="rate my-3">
-                                    <del style={{opacity: 0.8}}>AED {x.original}</del>
-                                </h5>
+                                </p>
+                                <p className="rate-deleted my-3">
+                                    <del style={{opacity: 0.9}}>AED {x.original}</del>
+                                </p>
                                 <button className="btn-book-now my-2" onClick={()=> window.location = "https://be.synxis.com/?_ga=2.102065793.1000121752.1606552834-1702853238.1606552834&adult=1&arrive=2020-11-28&chain=27304&child=0&currency=AED&depart=2020-11-29&hotel=75043&level=hotel&locale=en-US&promo=HSPA&rooms=1"}>BOOK NOW</button>
                             </div>
                         </div>
