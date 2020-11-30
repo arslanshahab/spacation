@@ -9,8 +9,8 @@ const Navbar = (props) => {
         <nav className="main-nav">
             <img src={logo} alt="logo"/>
             <ul>
-                <li> <Phone fontSize="small" className="mx-2 mb-2" /> <span>+248 348 7000</span> </li>
-                <li className="mb-0"> <Email fontSize="small" className="mx-2" /> <span>seychelles@h-hotel.com</span> </li>
+                <li> <Phone fontSize="small" className="mx-2 mb-2" /><a href="tel:+2483487000"> <span>+248 348 7000</span> </a></li>
+                <li className="mb-0"> <Email fontSize="small" className="mx-2" /><a href="mailto:seychelles@h-hotel.com">seychelles@h-hotel.com</a> </li>
             </ul>
         </nav>
      );
